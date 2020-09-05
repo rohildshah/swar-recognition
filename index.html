@@ -3,32 +3,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- <title></title>
-        <meta name="description" content="">
+        <title>Swar Recognition</title>
 
-        <link rel="shortcut icon" href="favicon.ico"> -->
+        <link rel="shortcut icon" href="favicon.png">
 
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="/index.js"></script>
 
+        <link rel="stylesheet" href="/index.css">
     </head>
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <button type="button" class="btn btn-primary" onclick="buttonClick()">Get Svar</button>
-            </div>
-            <div class="row">
-                <div class="col text-center" id="first-svar"></div>
-                <div class="col text-center" id="second-svar"></div>
-            </div>
+    <body onclick="buttonClick();">
+        <div class="cont">
+            <div class="col swar" id="first-swar"></div>
+            <div class="col swar" id="second-swar"></div>
         </div>
+
+        <script src="/index.js"></script>
     </body>
 </html>
