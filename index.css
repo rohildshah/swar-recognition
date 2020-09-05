@@ -5,7 +5,9 @@
 
 .cont {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-60%);
+    height: 100vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
