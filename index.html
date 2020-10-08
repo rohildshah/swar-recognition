@@ -8,17 +8,33 @@
         <link rel="shortcut icon" href="favicon.png">
         <link rel="apple-touch-icon" href="favicon.png"/>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="/index.css">
     </head>
 
-    <body onclick="buttonClick();">
-        <div class="cont">
-            <div class="col swar" id="first-swar"></div>
-            <div class="col swar" id="second-swar"></div>
+    <body>
+        <div class="btn-group btn-group-toggle choose" data-toggle="buttons" onclick="screenClick();">
+            <label class="btn btn-lg btn-secondary rounded-0 active">
+              <input type="radio" name="options" id="2" autocomplete="off" checked> 2
+            </label>
+            <label class="btn btn-lg btn-secondary rounded-0">
+              <input type="radio" name="options" id="3" autocomplete="off"> 3
+            </label>
+            <label class="btn btn-lg btn-secondary rounded-0">
+              <input type="radio" name="options" id="4" autocomplete="off"> 4
+            </label>
+        </div>
+
+
+        <div class="cont" onclick="screenClick();">
+            <div class="swar" id="0-swar"></div>
+            <div class="swar" id="1-swar"></div>
+            <div class="swar" id="2-swar"></div>
+            <div class="swar" id="3-swar"></div>
         </div>
 
         <script src="/index.js"></script>
